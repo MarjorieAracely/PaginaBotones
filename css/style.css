@@ -15,6 +15,19 @@ body {
     margin: 0;
     background-color: #e0e0fa;
 }
+
+#pagina1, #pagina2{height: 100%;}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    main{
+        flex-grow: 1;
+    }
+}
+
 #nav1,#nav2{
     position: fixed;
     top: 0;
@@ -22,7 +35,7 @@ body {
     padding: 0;
     nav{
         padding: 1%;
-        background-color: rgb(13, 248, 209);
+        background-color: rgb(205, 167, 248);
         ul{
             display: flex;
             justify-content: end;
@@ -41,7 +54,7 @@ body {
         }
     }
 }
-.main1{
+.main1,.main2{
     padding: 1%;
     section{
         padding: 1%;
@@ -55,16 +68,39 @@ body {
 }
 
 
-
 button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 10px;
     cursor: pointer;
     font-size: 16px;
     border: none;
-    background-color: #5b4866;
+    background-color: #100318;
     color: white;
     border-radius: 5px;
+}
+.footer1,.footer2{
+    background-color: rgb(64, 36, 73);
+    color: white;
+    h4{
+        margin-right: 10%;
+        display: flex;
+        justify-content: end;
+        font-size: 20px;
+        padding: 2%;
+    }
+    ul{
+        li{
+            margin-right: 12%;
+            justify-content: right;
+            display: flex;
+            padding: 1%;
+            list-style-type: none;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .oculta {
